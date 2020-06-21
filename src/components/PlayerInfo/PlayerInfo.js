@@ -4,9 +4,9 @@ import './PlayerInfo.scss';
 
 const PlayerInfo = ({ isActive }) => (
   <div className='players'>
-    <div className={`player-item ${isActive === 'x' ? 'active' : ''}`}>&times;</div>
-    <div className={`player-item ${isActive === 'o' ? 'active' : ''}`}>&#9675;</div>
-    <p className='active-player-text'>Next Move - {isActive === 'x' ? <span>&times;</span> : <span>&#9675;</span>}</p>
+    <div className={`player-item ${isActive === 'x' ? 'active' : ''}`}><span className='fa fa-times'></span></div>
+    <div className={`player-item ${isActive === 'o' ? 'active' : ''}`}><span className='fa fa-circle-o'></span></div>
+    <p className='active-player-text'>Next Move - {isActive === 'x' ? <span className='fa fa-times'></span> : <span className='fa fa-circle-o'></span>}</p>
   </div>
 );
 

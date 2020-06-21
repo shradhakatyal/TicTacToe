@@ -4,9 +4,9 @@ import './GameBoard.scss';
 
 const generateHTMLForCell = (el) => {
   if(el === 'x') {
-    return (<span>&times;</span>);
+    return (<span className='fa fa-times'></span>);
   } else if(el === 'o') {
-    return (<span>&#9675;</span>);
+    return (<span className='fa fa-circle-o'></span>);
   } else {
     return '';
   }
