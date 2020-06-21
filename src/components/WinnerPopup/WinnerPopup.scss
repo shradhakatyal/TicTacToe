@@ -1,0 +1,49 @@
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .winner-popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 20px 30px;
+    h1{
+      margin: 0;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 55px;
+      margin-top: 10px;
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      background: #0088ff;
+      border: none;
+      padding: 10px;
+      color: white;
+      font-size: 18px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+}
+  }
+}
