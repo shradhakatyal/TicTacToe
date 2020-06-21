@@ -8,10 +8,14 @@ const WinnerPopup = ({ winner, onClickPlayAgain }) => {
       <div className='winner-popup'>
         <h1>Game Over</h1>
         {
-          winner === 'x' ? 
-          <p>Player &times; won the game!</p>
-          :
-          <p>Player &#9675; won the game!</p>
+          !winner ? 
+          <p>The game was a tie!</p>
+          : 
+            winner === 'x' ? 
+            <p>Player &times; won the game!</p>
+            :
+            <p>Player &#9675; won the game!</p>
+          
         }
         <button type='button' onClick={onClickPlayAgain}>Play Again?</button>
       </div>
