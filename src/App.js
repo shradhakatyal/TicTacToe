@@ -12,7 +12,7 @@ class App extends React.Component {
     }
   }
 
-  clickOnCell = (e, i, j) => {
+  onClickCell = (e, i, j) => {
     console.log(i, j);
     if(!this.state.boardState[i][j]) {
       console.log('here')
@@ -36,7 +36,7 @@ class App extends React.Component {
       <div className="main-wrapper">
         <h1 className='main-heading'>TIC TAC TOE</h1>
         <PlayerInfo isActive={isActive} />
-        <GameBoard isActive={isActive} boardState={boardState} clickOnCell={this.clickOnCell} />
+        <GameBoard isActive={isActive} boardState={boardState} onClickCell={this.onClickCell} />
       </div>
     );
   }

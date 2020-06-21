@@ -17,6 +17,8 @@
   }
 
   .cell {
+    cursor: pointer;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     height: 100%;
@@ -24,6 +26,18 @@
     border-right: 1px solid #e3a702;
     &:last-of-type {
       border-right: 0;
+    }
+
+    span {
+      position: absolute;
+      font-size: 70px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
     }
   }
 }
