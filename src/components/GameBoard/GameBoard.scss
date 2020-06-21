@@ -1,0 +1,29 @@
+.game-board-area {
+  width: 100%;
+  background-color: #fee39a;
+  padding: 50px 0;
+}
+.game-board {
+  // border: 1px solid #fcba03;
+  width: 300px;
+  height: 300px;
+  margin: 0px auto;
+  .row {
+    height: 33%;
+    border-bottom: 1px solid #e3a702;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  .cell {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 33%;
+    border-right: 1px solid #e3a702;
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+}
